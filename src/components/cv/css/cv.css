@@ -152,18 +152,13 @@
 
 .cv-pdf-header-row{
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 18px;
 }
 
 .cv-pdf-header-left{
     flex: 1 1 auto;
     min-width: 280px;
-}
-
-.cv-pdf-header-right{
-    flex: 0 0 240px;
 }
 
 .cv-pdf-expertise-block{
@@ -214,6 +209,49 @@
     text-decoration-color: rgba(85, 101, 232, 0.75);
 }
 
+.cv-pdf-link-badge{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-family: FiraCode;
+    font-size: 11px;
+    font-weight: 700;
+    color: #1C2B3A;
+    border: 1px solid rgba(85, 101, 232, 0.22);
+    background: rgba(85, 101, 232, 0.05);
+    border-radius: 10px;
+    padding: 6px 10px;
+    text-decoration: none;
+    box-shadow: 0 8px 18px rgba(13, 13, 13, 0.05);
+}
+
+.cv-pdf-link-badge:hover{
+    border-color: rgba(85, 101, 232, 0.35);
+    background: rgba(85, 101, 232, 0.08);
+}
+
+.cv-pdf-link-action{
+    margin-left: 10px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: FiraCode;
+    font-size: 11px;
+    font-weight: 700;
+    color: #1C2B3A;
+    border: 1px dashed rgba(85, 101, 232, 0.28);
+    background: rgba(85, 101, 232, 0.04);
+    border-radius: 10px;
+    padding: 4px 8px;
+    text-decoration: none;
+}
+
+.cv-pdf-link-action:hover{
+    border-color: rgba(85, 101, 232, 0.40);
+    background: rgba(85, 101, 232, 0.07);
+}
+
 .cv-pdf-links{
     display: flex;
     flex-wrap: wrap;
@@ -244,11 +282,13 @@
     border-radius: 999px;
     padding: 6px 10px;
     text-decoration: none;
+    box-shadow: inset 0 -1px 0 rgba(85, 101, 232, 0.22);
 }
 
 .cv-pdf-link-chip:hover{
     border-color: rgba(85, 101, 232, 0.35);
     background: rgba(85, 101, 232, 0.05);
+    box-shadow: inset 0 -1px 0 rgba(85, 101, 232, 0.40);
 }
 
 .cv-pdf-divider {
@@ -503,13 +543,13 @@
         box-shadow: none !important;
     }
 
-    .cv-pdf-header-row{
-        flex-wrap: nowrap !important;
+    .cv-pdf-link-badge{
+        box-shadow: none !important;
     }
 
-    .cv-pdf-header-right{
-        flex: 0 0 240px !important;
-    }
+    /* .cv-pdf-header-row{
+        flex-wrap: nowrap !important;
+    } */
 
     .cv-pdf-grid{
         grid-template-columns: 1.2fr 0.8fr !important;

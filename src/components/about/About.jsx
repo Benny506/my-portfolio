@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import './css/about.css'
-import CodeShowcase from './auxiliary/CodeShowCase';
+import CodeShowcase from './auxiliary/CodeShowcase';
 import AboutRouter from './AboutRouter'
 import { Offcanvas } from 'react-bootstrap';
 import { RxCross2 } from 'react-icons/rx';

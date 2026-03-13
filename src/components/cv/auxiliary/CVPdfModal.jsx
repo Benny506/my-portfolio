@@ -18,6 +18,7 @@ export default function CVPdfModal({
     const githubUrl = "https://github.com/Benny506"
     const portfolioUrl = "https://example.com/portfolio"
     const digitalPreviewUrl = `${globalThis?.location?.origin ?? ""}/#/my-cv` || "#/my-cv"
+    const linkedInUrl = "https://www.linkedin.com/in/ufeholom/"
 
     const handlePrint = useReactToPrint({
         contentRef: printRef,
@@ -30,6 +31,7 @@ export default function CVPdfModal({
         const t = normalize(title)
         if (t.includes("lavendercare")) return "lavendercare"
         if (t.includes("awambe")) return "awambe"
+        if (t.includes("scrap2style")) return "scrap2style"
         if (t.includes("flexxxa")) return "flexxxa"
         if (t.includes("leash")) return "leash"
         if (t.includes("myunimap") || t.includes("myuni") || t.includes("unimap")) return "myunimap"
@@ -72,7 +74,7 @@ export default function CVPdfModal({
     }
 
     const orderedWork = (() => {
-        const order = ["lavendercare", "awambe", "flexxxa", "leash", "myunimap"]
+        const order = ["lavendercare", "scrap2style", "awambe", "flexxxa", "leash", "myunimap"]
         const withIndex = work.map((w, idx) => {
             const key = workKey(w?.title)
             const orderIndex = key ? order.indexOf(key) : -1
@@ -137,21 +139,25 @@ export default function CVPdfModal({
                                 </p>
                             </div>
 
-                            <div className="cv-pdf-header-right">
+                            <div className="d-flex align-items-center gap-3 flex-wrap cv-pdf-header-right">
                                 <p className="m-0 p-0 cv-pdf-meta">
-                                    <a className="cv-pdf-link" href="mailto:olomufeh@gmail.com">olomufeh@gmail.com</a>
+                                    <a className="cv-pdf-link-badge" href="mailto:olomufeh@gmail.com">olomufeh@gmail.com ↗</a>
+                                </p>
+
+                                {/* <p className="m-0 p-0 cv-pdf-meta mt-1">
+                                    GitHub: <a className="cv-pdf-link-badge" href={githubUrl} target="_blank" rel="noopener">Benny506 ↗</a>
+                                </p> */}
+
+                                <p className="m-0 p-0 cv-pdf-meta mt-1">
+                                    <a className="cv-pdf-link-badge" href={portfolioUrl} target="_blank" rel="noopener">Portfolio ↗</a>
                                 </p>
 
                                 <p className="m-0 p-0 cv-pdf-meta mt-1">
-                                    GitHub: <a className="cv-pdf-link" href={githubUrl} target="_blank" rel="noopener">Benny506</a>
+                                    <a className="cv-pdf-link-badge" href={linkedInUrl} target="_blank" rel="noopener">LinkedIn ↗</a>
                                 </p>
 
                                 <p className="m-0 p-0 cv-pdf-meta mt-1">
-                                    Portfolio: <a className="cv-pdf-link" href={portfolioUrl} target="_blank" rel="noopener">open</a>
-                                </p>
-
-                                <p className="m-0 p-0 cv-pdf-meta mt-1">
-                                    Digital preview: <a className="cv-pdf-link" href={digitalPreviewUrl} target="_blank" rel="noopener">my-cv</a>
+                                    <a className="cv-pdf-link-badge" href={digitalPreviewUrl} target="_blank" rel="noopener">Digital preview ↗</a>
                                 </p>
                             </div>
                         </div>
@@ -239,7 +245,7 @@ export default function CVPdfModal({
                                                         target="_blank"
                                                         rel="noopener"
                                                     >
-                                                        {l.label}
+                                                        {l.label} ↗
                                                     </a>
                                                 ))}
                                             </div>
