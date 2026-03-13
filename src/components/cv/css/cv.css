@@ -150,6 +150,107 @@
     color: rgba(13, 13, 13, 0.72);
 }
 
+.cv-pdf-header-row{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 18px;
+}
+
+.cv-pdf-header-left{
+    flex: 1 1 auto;
+    min-width: 280px;
+}
+
+.cv-pdf-header-right{
+    flex: 0 0 240px;
+}
+
+.cv-pdf-expertise-block{
+    border-left: 3px solid rgba(85, 101, 232, 0.25);
+    padding-left: 10px;
+}
+
+.cv-pdf-expertise-title{
+    font-family: FiraCode;
+    font-size: 12px;
+    font-weight: 700;
+    color: #1C2B3A;
+}
+
+.cv-pdf-expertise-li{
+    font-family: FiraCode;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.55;
+    color: rgba(13, 13, 13, 0.78);
+    margin-bottom: 6px;
+}
+
+.cv-pdf-dot{
+    color: rgba(85, 101, 232, 0.9);
+}
+
+.cv-pdf-card{
+    border: 1px solid rgba(13, 13, 13, 0.10);
+    background: rgba(13, 13, 13, 0.012);
+    border-radius: 12px;
+    padding: 12px 12px;
+    box-shadow: 0 10px 26px rgba(13, 13, 13, 0.06);
+}
+
+.cv-pdf-card.cv-pdf-footer{
+    box-shadow: 0 8px 18px rgba(13, 13, 13, 0.045);
+}
+
+.cv-pdf-link{
+    color: #1C2B3A;
+    text-decoration: underline;
+    text-decoration-color: rgba(85, 101, 232, 0.45);
+    text-underline-offset: 2px;
+}
+
+.cv-pdf-link:hover{
+    text-decoration-color: rgba(85, 101, 232, 0.75);
+}
+
+.cv-pdf-links{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.cv-pdf-note{
+    font-family: FiraCode;
+    font-size: 11px;
+    font-weight: 600;
+    color: rgba(13, 13, 13, 0.58);
+}
+
+.cv-pdf-exp-card{
+    border: 1px solid rgba(13, 13, 13, 0.10);
+    background: rgba(13, 13, 13, 0.015);
+    border-radius: 12px;
+    padding: 12px 12px;
+}
+
+.cv-pdf-link-chip{
+    font-family: FiraCode;
+    font-size: 11px;
+    font-weight: 600;
+    color: #1C2B3A;
+    border: 1px solid rgba(13, 13, 13, 0.12);
+    background: rgba(13, 13, 13, 0.02);
+    border-radius: 999px;
+    padding: 6px 10px;
+    text-decoration: none;
+}
+
+.cv-pdf-link-chip:hover{
+    border-color: rgba(85, 101, 232, 0.35);
+    background: rgba(85, 101, 232, 0.05);
+}
+
 .cv-pdf-divider {
     height: 1px;
     background: rgba(13, 13, 13, 0.10);
@@ -398,6 +499,22 @@
         display: none !important;
     }
 
+    .cv-pdf-card{
+        box-shadow: none !important;
+    }
+
+    .cv-pdf-header-row{
+        flex-wrap: nowrap !important;
+    }
+
+    .cv-pdf-header-right{
+        flex: 0 0 240px !important;
+    }
+
+    .cv-pdf-grid{
+        grid-template-columns: 1.2fr 0.8fr !important;
+    }
+
     .cv-pdf-divider,
     .cv-pdf-footer {
         break-inside: avoid;
@@ -407,6 +524,12 @@
     .cv-pdf-section,
     .cv-pdf-grid,
     .cv-pdf-col {
+        break-inside: auto;
+        page-break-inside: auto;
+    }
+
+    .cv-pdf-block,
+    .cv-pdf-exp-card {
         break-inside: avoid;
         page-break-inside: avoid;
     }
