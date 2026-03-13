@@ -41,6 +41,7 @@ export default function AboutNav({ onHideOffCanvasNav }){
     const toggleShowPersonalInfo = () => setShowPersonalInfo(prev => !prev)
     const toggleShowContactInfo = () => setShowContactInfo(prev => !prev)
     const toggleShowEducationInfo = () => setShowEducationInfo(prev => !prev)
+    const openContactModal = () => window.dispatchEvent(new Event('open-contact-modal'))
 
     return (
         <div
@@ -126,18 +127,18 @@ export default function AboutNav({ onHideOffCanvasNav }){
                             :
                                 <FaCaretUp size={18} color='#fff' />
                         }
-                        <p className='txt-FFF regular-txt m-0 p-0 px-2'>contacts</p>
+                        <p className='txt-FFF regular-txt m-0 p-0 px-2'>contact-info</p>
                     </div>   
 
                     <Collapse in={showContactInfo}>
                         <div className='mx-3'>
-                            <div className='d-flex align-items-center mb-3'>
+                            <div onClick={openContactModal} className='pointer d-flex align-items-center mb-3'>
                                 <IoMailOutline size={18} color='#607B96' />
                                 <p className='txt-607B96 regular-txt m-0 p-0 mx-2'>olomufeh @ gmail.com</p>
                             </div>
-                            <div className='d-flex align-items-center mb-3'>
+                            <div onClick={openContactModal} className='pointer d-flex align-items-center mb-3'>
                                 <FaPhone size={18} color='#607B96' />
-                                <p className='txt-607B96 regular-txt m-0 p-0 px-2'>+234 9095548706</p>
+                                <p className='txt-607B96 regular-txt m-0 p-0 px-2'>+234 7010915889</p>
                             </div>
                         </div>
                     </Collapse>                 

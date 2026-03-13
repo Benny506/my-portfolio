@@ -6,24 +6,23 @@ import { FaFolderOpen } from "react-icons/fa";
 const myStacksArr = [
     'Frontend development (Web)',
     '~React',
-    '~Redux',
-    '~Bootstrap && React-bootstrap',
-    '~Vanilla Js',
+    '~State Management: Redux, Context + Hooks',
+    '~Styling: Bootstrap, React-bootstrap, Tailwind',
     '',
     'Frontend development (Mobile)',
     '~React Native',
     '~Expo',
     '~Redux',
     '',
-    'Backend development',
-    '~Express server',
-    '~Node JS',
-    '~SQL (postgreSQL, mySQL, SQLite e.t.c)',
-    '~NoSQL (MongoDB, Redis)',
+    'Backend development (Familiarity with):',
+    '~Supabase (Very high level)',
+    '~Express server (Mid-level)',
+    '~Node JS (Mid-level)',
+    '~SQL (postgreSQL, mySQL, SQLite e.t.c) (High-level)',
+    '~NoSQL (MongoDB, Redis) (Mid-level)',
     '',
     'Currently learning',
     '~Ethical hacking',
-    '~Artificial Intelligience (AI)'
 ]
 
 

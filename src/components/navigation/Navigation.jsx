@@ -1,9 +1,10 @@
 import { useLocation, useNavigate } from 'react-router-dom'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import './css/navigation.css'
 import { AiOutlineMenu } from "react-icons/ai";
 import { RxCross2 } from "react-icons/rx";
 import { Offcanvas } from 'react-bootstrap';
+import ContactModal from '../contact/ContactModal';
 
 
 
@@ -48,9 +49,18 @@ export default function Navigation(){
             : '/'
 
     const [showOffCanvasNav, setShowOffCanvasNav] = useState(false)
+    const [showContactModal, setShowContactModal] = useState(false)
 
     const onShowOffCanvasNav = () => setShowOffCanvasNav(true)
     const onHideOffCanvasNav = () => setShowOffCanvasNav(false)
+    const onShowContactModal = () => setShowContactModal(true)
+    const onHideContactModal = () => setShowContactModal(false)
+
+    useEffect(() => {
+        const handler = () => setShowContactModal(true)
+        window.addEventListener('open-contact-modal', handler)
+        return () => window.removeEventListener('open-contact-modal', handler)
+    }, [])
 
     const displayNavLinks = navLinks.map((link, i) => {
         const { title, path } = link
@@ -99,7 +109,7 @@ export default function Navigation(){
                     { displayNavLinks }
                 </div>
                 <div className='d-lg-flex d-md-flex d-none align-items-center justify-content-end col-lg-2'>
-                    <p className={`p-0 py-3 px-4 m-0 pointer regular-txt border-left-light-1E2D3D txt-607B96 nav-link-txt ${activeNav == '/contact-me' && 'text-white'}`}>_contact-me</p>
+                    <p onClick={onShowContactModal} className={`p-0 py-3 px-4 m-0 pointer regular-txt border-left-light-1E2D3D txt-607B96 nav-link-txt ${activeNav == '/contact-me' && 'text-white'}`}>_contact-me</p>
                 </div>
                 <div className='d-lg-none d-md-none d-block'>
                     <AiOutlineMenu size={23} color='#607B96' onClick={onShowOffCanvasNav} />
@@ -118,10 +128,12 @@ export default function Navigation(){
                         <p onClick={goHome} className={`p-0 py-3 border-bottom-light-1E2D3D px-3 m-0 regular-txt txt-607B96 nav-link-txt ${activeNav == '/' && 'text-white'}`}>_hello</p>
                         <p onClick={goToAboutMe} className={`p-0 py-3 border-bottom-light-1E2D3D px-3 m-0 regular-txt txt-607B96 nav-link-txt ${activeNav == '/about-me' && 'text-white'}`}>_about-me</p>
                         <p onClick={goToProjects} className={`p-0 py-3 border-bottom-light-1E2D3D px-3 m-0 regular-txt txt-607B96 nav-link-txt ${activeNav == '/projects' && 'text-white'}`}>_projects</p>
-                        <p className={`p-0 py-3 border-bottom-light-1E2D3D px-3 m-0 regular-txt txt-607B96 nav-link-txt ${activeNav == '/contact-me' && 'text-white'}`}>_contact-me</p>                        
+                        <p onClick={() => { onShowContactModal(); onHideOffCanvasNav() }} className={`p-0 py-3 border-bottom-light-1E2D3D px-3 m-0 regular-txt txt-607B96 nav-link-txt ${activeNav == '/contact-me' && 'text-white'}`}>_contact-me</p>                        
                     </div>
                 </div>
             </Offcanvas>
+
+            <ContactModal show={showContactModal} onHide={onHideContactModal} />
         </div>
     )
 }

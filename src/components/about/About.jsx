@@ -8,6 +8,7 @@ import Footer from '../footer/Footer';
 import Navigation from '../navigation/Navigation';
 import AboutNav from './AboutNav';
 import FloatingBtn from '../CustomBtns/FloatingBtn';
+import { motion as Motion } from "motion/react";
 
 
 export default function About(){
@@ -32,26 +33,52 @@ export default function About(){
                 className='home-section-bg h-100 w-100 d-flex flex-wrap align-items-start justify-content-between'
             >
             
-                <div 
+                <Motion.div
                     style={{ minHeight: '80vh' }} 
                     className='col-lg-2 h-100 d-lg-block d-md-none d-none'
+                    initial={{ opacity: 0, x: -14 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: false, amount: 0.35 }}
+                    transition={{ duration: 0.55, ease: "easeOut" }}
                 >
                     <AboutNav />
-                </div>
+                </Motion.div>
 
-                <div 
+                <Motion.div
                     style={{ minHeight: '80vh' }} 
                     className='col-lg-5 col-md-6 col-12 h-100'
+                    initial={{ opacity: 0, y: 14 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: false, amount: 0.35 }}
+                    transition={{ duration: 0.55, ease: "easeOut" }}
                 >
-                    <AboutRouter onShowOffCanvasNav={onShowOffCanvasNav} />
-                </div>
+                    <Motion.div
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
+                        viewport={{ once: false, amount: 0.35 }}
+                        transition={{ duration: 0.55, ease: "easeOut", delay: 0.06 }}
+                    >
+                        <AboutRouter onShowOffCanvasNav={onShowOffCanvasNav} />
+                    </Motion.div>
+                </Motion.div>
 
-                <div 
+                <Motion.div
                     style={{ minHeight: '80vh' }} 
                     className='col-lg-5 col-md-6 col-12 d-lg-block d-md-block d-none'
+                    initial={{ opacity: 0, x: 14 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: false, amount: 0.35 }}
+                    transition={{ duration: 0.55, ease: "easeOut", delay: 0.05 }}
                 >
-                    <CodeShowcase />
-                </div>
+                    <Motion.div
+                        initial={{ opacity: 0, scale: 0.99 }}
+                        whileInView={{ opacity: 1, scale: 1 }}
+                        viewport={{ once: false, amount: 0.35 }}
+                        transition={{ duration: 0.55, ease: "easeOut" }}
+                    >
+                        <CodeShowcase />
+                    </Motion.div>
+                </Motion.div>
 
             </div>                
 
@@ -60,7 +87,13 @@ export default function About(){
             </div>
 
             <div className='d-lg-none d-md-none d-block'>
-                <FloatingBtn icon={'code'} btnFunc={toggleOffCanvasSnippet} />                
+                <Motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.45, ease: "easeOut" }}
+                >
+                    <FloatingBtn icon={'code'} btnFunc={toggleOffCanvasSnippet} />
+                </Motion.div>
             </div>
 
             <Offcanvas show={showOffCanvasNav} >

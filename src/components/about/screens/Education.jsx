@@ -16,9 +16,8 @@ const collegeEducation = [
     'University Of Calabar',
     'U.N.I.C.A.L',
     '',
-    'Studying Computer Science',
-    '300lvl',
-    'Graduating in September 2025'
+    'Computer Science',
+    'Graduated in 2026'
 ]
 
 

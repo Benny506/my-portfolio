@@ -5,14 +5,19 @@ import CustomScroll from "../../scroll/CustomScroll";
 
 const personalInfoArr = [
     'About me.',
-    'FullStack developer',
-    'Stacks are react, node, sql, express.',
-    '5 years of professional experience.',
-    'CTO at Control Genesis LTD.',
+    'Frontend Software developer',
+    '4+ years of professional experience.',
     'Great team player',
     'Fast learner',
     'Possess a high value output.',
-    'Extremely time concious.'
+    'Values timely delivery.',
+    'Builds scalable React and React Native architectures.',
+    'Strong at state management (Redux, Context API, custom hooks).',
+    'Performance-focused: rendering efficiency, lazy loading, and clean UX.',
+    'Experienced with payment integrations and transactional flows.',
+    'Comfortable building real-time features (chat, presence, live updates).',
+    'Owns features end-to-end from planning to deployment.',
+    'Writes clean, maintainable, component-driven UI.'
 ]
 
 
