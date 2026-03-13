@@ -1,0 +1,22 @@
+.code-snippet-container{
+    background-color: #0D0D0D;   
+    overflow-y: auto;
+    overflow-x: auto;
+    height: 290px;
+    white-space: nowrap;
+    /* width: 550px;  */
+}
+
+.code-snippet-container-2{
+    background-color: #011221;
+    overflow-y: auto;
+    overflow-x: auto;
+    height: 290px;
+    white-space: nowrap;
+    stroke: #1E2D3D;
+}
+/* .code-snippet-txt{
+    text-overflow: clip;
+    overflow: hidden;
+    white-space: nowrap;
+} */

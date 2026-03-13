@@ -1,0 +1,29 @@
+.nav-container{
+    border-bottom: 0.5px solid #1E2D3D;
+}
+.nav-link-txt-container{
+    border-left: 0.5px solid #1E2D3D;
+    border-right: 0.5px solid #1E2D3D;
+    cursor: pointer;
+}
+.nav-link-container-border-left{
+    border-left: 0.5px solid #1E2D3D;
+    cursor: pointer;
+}
+.nav-link-container-border-right{
+    border-right: 0.5px solid #1E2D3D;
+    cursor: pointer;
+}
+.nav-link-txt{
+    color: #607B96;
+}
+.nav-link-txt:hover{
+    color: #fff
+}
+.nav-link-txt-active{
+    color: #fff;
+}
+.nav-link-container-active{
+    border-bottom: 2.5px solid #FEA55F;
+    color: #fff;
+}

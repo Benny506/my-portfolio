@@ -1,0 +1,8 @@
+.about-bg{
+    background-color: #011627;
+    stroke: #1E2D3D;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}

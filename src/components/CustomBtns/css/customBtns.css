@@ -1,0 +1,7 @@
+/* Floating btn  */
+.floating-btn-container{
+    position: absolute;
+    bottom: 80px;
+    right: 15px;
+    z-index: 1000;
+}

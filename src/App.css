@@ -1,0 +1,162 @@
+/* globals  */
+
+
+/* TEXT COLOR VARIATIONS */
+
+.txt-FFF{
+  color: #fff;
+}
+
+.txt-4D5BCE{
+  color: #4D5BCE;
+}
+
+.txt-5565E8{
+  color: #5565E8;
+}
+
+.txt-6C6C6D{
+  color: #6c6c6d;
+}
+
+.txt-43D9AD{
+  color: #43D9AD;
+}
+
+.txt-218365{
+  color: #218365;
+}
+
+.txt-E99287{
+  color: #E99287;
+}
+
+.txt-607B96{
+  color: #607B96;
+}
+
+.txt-A020F0{
+  color: #A020F0;
+}
+
+.txt-ADD8E6{
+  color:#ADD8E6
+}
+
+.txt-C9C901{
+  color: #c9c901
+}
+
+.txt-D6E225{
+  color: #d6e225
+}
+
+.txt-C0C083{
+  color: #c0c083
+}
+
+/* SMALL SIZED TEXT */
+
+.extra-small-txt {
+  font-family: FiraCode;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.small-txt {
+  font-family: FiraCode;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+
+/* REGULAR SIZE TEXT */
+
+.regular-txt {
+    font-family: FiraCode;
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+
+/* MEDIUM SIZED TEXT */
+
+.medium-txt {
+  font-family: FiraCode;
+  font-size: 18.5px;
+  font-weight: 500;
+}
+
+
+/* LARGE SIZED TEXT */
+
+.large-txt {
+  font-family: FiraCode;
+  font-size: 28.5px;
+  font-weight: 500;
+}
+
+
+/* EXTRA LARGE SIZED TEXT */
+
+.extra-large-txt {
+  font-family: FiraCode;
+  font-size: 38.5px;
+  font-weight: 500;
+}
+
+
+
+/* Borders */
+.border-right-light-1E2D3D{
+  border-right: 0.5px solid #1E2D3D;
+}
+.border-left-light-1E2D3D{
+  border-left: 0.5px solid #1E2D3D;
+}
+.border-bottom-light-1E2D3D{
+  border-bottom: 0.5px solid #1E2D3D;
+}
+.border-horizontal-light-1E2D3D{
+  border-right: 0.5px solid #1E2D3D;
+  border-left: 0.5px solid #1E2D3D;
+}
+.border-vertical-light-1E2D3D{
+  border-top: 0.5px solid #1E2D3D;
+  border-bottom: 0.5px solid #1E2D3D;
+}
+
+
+
+/* Mouse Pointers */
+.pointer{
+  cursor: pointer;
+}
+
+
+/* Backgrounds  */
+.bg-img{
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-011221{
+  background-color: #011221;
+}
+
+.bg-0D0D0D{
+  background-color: #0D0D0D;
+}
+
+.bg-1E2D3D{
+  background-color: #1E2D3D;
+}
+
+.bg-1C2B3A{
+  background-color: #1C2B3A;
+}
+
+.bg-86E1F9{
+  background-color: #86E1F9;
+}
