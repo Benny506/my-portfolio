@@ -18,7 +18,7 @@ export default function CVPdfModal({
     const githubUrl = "https://github.com/Benny506"
     const portfolioUrl = "https://benedict-olom.netlify.app/"
     const digitalPreviewUrl = `https://benedict-olom.netlify.app/#/my-cv`
-    const linkedInUrl = "www.linkedin.com/in/benedict-olom-a4691916b"
+    const linkedInUrl = "https://www.linkedin.com/in/benedict-olom-a4691916b"
 
     const handlePrint = useReactToPrint({
         contentRef: printRef,
