@@ -42,7 +42,7 @@ export default function Home(){
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.55, ease: "easeOut", delay: 0.08 }}
                         >
-                            Hi all. I'm a Software Dev (Frontend core)
+                            Hi all. I'm a Full-Stack Software Developer
                         </Motion.h6>
                         <Motion.h1
                             className='m-0 p-0 extra-large-txt txt-FFF mb-2'

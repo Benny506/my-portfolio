@@ -48,7 +48,7 @@ export default function CV() {
 
     const coreExpertise = [
         {
-            title: "Frontend Engineering",
+            title: "Full-Stack Engineering",
             items: [
                 "React, React Native",
                 "Redux (advanced patterns), Context API, Custom Hooks",
@@ -78,7 +78,7 @@ export default function CV() {
         {
             title: "Awambe – Event Planning Ecosystem",
             bullets: [
-                "Built an event planning platform with production-grade UI flows and scalable front-end architecture",
+                "Built an event planning platform with production-grade UI flows and scalable full-stack architecture",
                 "Integrated a vendor hiring dashboard synchronized with planner workflows for discovery, booking, and vendor engagement",
                 "Implemented planner-to-vendor chat flows to support negotiation and coordination during event preparation",
                 "Designed guest access flows using ticketing and invitation-based entry with validation-oriented UX patterns",
@@ -197,7 +197,7 @@ export default function CV() {
                                         transition={{ duration: 3.0, repeat: Infinity, ease: "linear" }}
                                     />
                                     <p className="m-0 p-0 small-txt txt-607B96">Benedict Ufeh Olom</p>
-                                    <p className="m-0 p-0 large-txt txt-FFF mt-2">Frontend Engineer</p>
+                                    <p className="m-0 p-0 large-txt txt-FFF mt-2">Full-Stack Engineer</p>
                                     <p className="m-0 p-0 regular-txt txt-4D5BCE mt-2">React & React Native</p>
                                     <div className="d-flex flex-wrap align-items-center gap-2 mt-3">
                                         <span className="cv-pill extra-small-txt">Open to Global Remote Roles</span>
@@ -246,7 +246,7 @@ export default function CV() {
 
                                 <CVSection id="summary" title="PROFESSIONAL SUMMARY">
                                     <p className="m-0 p-0 regular-txt txt-607B96">
-                                        Frontend Engineer with 4+ years of professional experience (2021–Present) building production-grade web and mobile applications. Specialized in scalable React architectures, secure payment workflows, real-time systems, and performance-optimized user interfaces. Delivered products including Awambe—an event planning platform integrated with a vendor hiring dashboard, planner-to-vendor chat workflows, and ticket/invitation-based guest access flows. Strong background in designing state-heavy systems and owning full product lifecycles from architecture to deployment.
+                                        Full-Stack Engineer with 4+ years of professional experience (2021–Present) building production-grade web and mobile applications. Specialized in scalable React architectures, secure payment workflows, real-time systems, and performance-optimized user interfaces. Delivered products including Awambe—an event planning platform integrated with a vendor hiring dashboard, planner-to-vendor chat workflows, and ticket/invitation-based guest access flows. Strong background in designing state-heavy systems and owning full product lifecycles from architecture to deployment.
                                     </p>
                                 </CVSection>
 
@@ -287,7 +287,7 @@ export default function CV() {
                                         <div className="cv-timeline-dot" />
                                         <div className="cv-timeline-line" />
                                         <div className="cv-timeline-content">
-                                            <p className="m-0 p-0 regular-txt txt-FFF">Frontend / Full-Stack Engineer</p>
+                                            <p className="m-0 p-0 regular-txt txt-FFF">Full-Stack Engineer</p>
                                             <p className="m-0 p-0 small-txt txt-607B96 mt-2">2021 – Present</p>
                                         </div>
                                     </div>

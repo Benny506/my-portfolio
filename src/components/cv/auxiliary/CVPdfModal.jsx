@@ -131,7 +131,7 @@ export default function CVPdfModal({
                                 </p>
 
                                 <p className="m-0 p-0 cv-pdf-role mt-1">
-                                    Frontend Engineer | React & React Native
+                                    Full-Stack Engineer | React, React Native & Node
                                 </p>
 
                                 <p className="m-0 p-0 cv-pdf-sub mt-2">
@@ -171,7 +171,7 @@ export default function CVPdfModal({
                         </p>
 
                         <p className="m-0 p-0 cv-pdf-p mt-2">
-                            Frontend Engineer with 4+ years of professional experience (2021–Present) building production-grade web and mobile applications. Specialized in scalable React architectures, secure payment workflows, real-time systems, and performance-optimized user interfaces.
+                            Full-Stack Engineer with 4+ years of professional experience (2021–Present) building production-grade web and mobile applications. Specialized in scalable React architectures, secure payment workflows, real-time systems, and performance-optimized user interfaces.
                         </p>
                     </div>
 

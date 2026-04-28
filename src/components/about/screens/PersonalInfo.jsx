@@ -5,7 +5,7 @@ import CustomScroll from "../../scroll/CustomScroll";
 
 const personalInfoArr = [
     'About me.',
-    'Frontend Software developer',
+    'Full-Stack Software developer',
     '4+ years of professional experience.',
     'Great team player',
     'Fast learner',
